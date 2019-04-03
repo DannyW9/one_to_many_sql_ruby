@@ -6,9 +6,17 @@ artist1 = Artist.new({
   })
 
 artist1.save()
-artist1.name = 'John'
-artist1.update()
-Artist.delete_all()
+
+artist2 = Artist.new({
+  'name' => 'AC/DC'
+  })
+
+artist2.save()
+
+artist1.delete()
+# artist1.name = 'John'
+# artist1.update()
+# Artist.delete_all()
 
 binding.pry
 
