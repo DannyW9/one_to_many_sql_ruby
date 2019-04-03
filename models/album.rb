@@ -1,4 +1,5 @@
 require_relative('../db/sql_runner.rb')
+require_relative('artist.rb')
 
 class Album
 
@@ -52,6 +53,13 @@ def self.find_by_id(id)
   values = [id]
   result = SqlRunner.run(sql, values)[0]
   return Album.new(result)
+end
+
+def artist()
+  sql = "SELECT * FROM artists WHERE id = $1"
+  values = [@artist_id]
+  result = SqlRunner.run(sql, values)[0]
+  return Artist.new(result)
 end
 
 end
