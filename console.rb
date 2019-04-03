@@ -13,7 +13,7 @@ artist2 = Artist.new({
 
 artist2.save()
 
-artist1.delete()
+# artist1.delete()
 # artist1.name = 'John'
 # artist1.update()
 # Artist.delete_all()
