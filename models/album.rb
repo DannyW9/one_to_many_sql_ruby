@@ -28,4 +28,9 @@ def self.all()
   return results.map{ |album| Album.new(album) }
 end
 
+def self.delete_all()
+  sql = "DELETE FROM albums"
+  SqlRunner.run(sql)
+end
+
 end
