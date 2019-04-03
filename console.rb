@@ -30,6 +30,9 @@ album2 = Album.new({
 
   album2.save()
 
+  album1.title = 'Relapse'
+  album1.update()
+
 # artist1.delete()
 # artist1.name = 'John'
 # artist1.update()
