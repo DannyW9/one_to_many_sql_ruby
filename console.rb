@@ -16,11 +16,15 @@ album1 = Album.new({
   'artist_id' => "#{artist1.id}"
   })
 
+  album1.save()
+
 album2 = Album.new({
   'title' => 'Revival',
   'genre' => 'Hip-Hop',
   'artist_id' => "#{artist1.id}"
   })
+
+  album2.save()
 
 # artist1.delete()
 # artist1.name = 'John'
