@@ -6,6 +6,8 @@ artist1 = Artist.new({
   })
 
 artist1.save()
+artist1.name = 'John'
+artist1.update()
 
 binding.pry
 
